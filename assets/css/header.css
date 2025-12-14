@@ -1,0 +1,53 @@
+/* Topbar Background */
+.brass-topbar {
+  background-color: #0d6efd !important; /* Blue background */
+  color: #fff;
+  font-size: 15px;
+}
+
+/* Contact Info Default */
+.contact-link i,
+.contact-link span {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+/* Contact Info Hover */
+.contact-link:hover i,
+.contact-link:hover span {
+  color: #f9d423 !important; /* Yellow on hover */
+}
+
+/* Social Icon Default */
+.social-icon i {
+  color: #fff !important;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* Social Icon Hover */
+.social-icon:hover i {
+  color: #f9d423 !important; /* Yellow on hover */
+  transform: scale(1.2);
+  text-shadow: 0 0 6px #f9d423;
+}
+
+/* Underline Animation for Social Icons */
+.social-icon {
+  position: relative;
+  display: inline-block; /* Important for underline effect */
+}
+.social-icon::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #f9d423 !important;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+.social-icon:hover::after {
+  width: 80%;
+}

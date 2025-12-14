@@ -1,0 +1,45 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    .hero-section {
+        background: 
+            linear-gradient(135deg, rgba(184,148,0,0.8) 0%, rgba(212,175,55,0.9) 100%),
+            url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8090c605-2f79-43cd-a486-c9a06d5d5088.png');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    
+    .gradient-text {
+        background: linear-gradient(90deg, #1A237E 0%, #B71C1C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .logo-gradient {
+        background: linear-gradient(90deg, #1e40af 0%, #b91c1c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .nav-link:hover {
+        color: #D4AF37 !important; /* Brass/gold hover color maintained */
+    }
+    
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .quality-card {
+        transition: all 0.3s ease;
+    }
+    
+    .quality-card:hover {
+        background-color: #f8f9fa;
+    }

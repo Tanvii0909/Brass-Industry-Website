@@ -1,0 +1,55 @@
+
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+         body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .brass-bg {
+            background: url('images/brass-bg.jpg') no-repeat center center/cover;
+        }
+        input:focus, textarea:focus {
+            outline: 2px solid #cfc537;
+        }
+               
+        
+        .contact-in{
+        width: 40%;
+        background: linear-gradient(135deg,#c49622,#d4af37,#c7c97c);
+        background-size: 200% 200%;
+        color: white;
+        padding: 50px 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        animation: brassShine 12s ease-in-out infinite;
+        }
+        @keyframes brassShine {
+        0%{background-position:0% 50%;}
+        50%{background-position:100% 50%;}
+        100%{background-position:0% 50%;}
+        }
+        .contact-in::before {
+        content:"";
+        position:absolute;
+        top:0; left:-60%;
+        width:40%; height:100%;
+        background:rgba(255,255,255,0.15);
+        transform:skewX(-20deg);
+        animation: shineMove 8s ease-in-out infinite;
+        }
+        @keyframes shineMove {
+        0% { left:-60%; }
+        50% { left:120%; }
+        100% { left:120%; }
+        }
+        .contact-in h2 {
+        margin-bottom: 25px;
+        font-size: 30px;
+        }
+        .contact-in p {
+        margin: 12px 0;
+        font-size: 17px;
+        line-height: 1.5;
+        }
