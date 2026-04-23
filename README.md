@@ -15,7 +15,7 @@ It provides an online presence for a brass industry by showcasing information, p
 
 ## Hosting & Version Control
 - Live Hosting : Google Hosting(Purchased Domain)
-- Source Code Management : GitHub Reository (Used for version control and code backup)
+- Source Code Management : GitHub Repository (Used for version control and code backup)
 
 ## Developer
 - Name : Tanvi Bhanderi
